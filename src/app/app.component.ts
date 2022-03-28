@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'portfolio-site';
+
+  LinkedIn(){
+    window.open("https://www.linkedin.com/in/scott-kinchlea/", "_blank")
+  }
 }
