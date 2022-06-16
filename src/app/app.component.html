@@ -1,12 +1,23 @@
-<mat-toolbar style="background-color: transparent; height: 75px;">
-    <button mat-icon-button aria-label="SK Logo">
-        <img src="assets/images/sklogot.png" height="75px" width="75px" style="margin-left: 15px">
-    </button>
-    <span class="example-spacer"></span>
-    <span class="nav-text-item hover-underline-animation" routerLink="/">Home</span>
-    <span class="nav-text-item hover-underline-animation" routerLink="/about">Skills</span>
-    <span class="nav-text-item hover-underline-animation">Past Work</span>
-    <span class="nav-text-item hover-underline-animation" (click)="LinkedIn()">LinkedIn</span>
-  </mat-toolbar> 
+<div fxShow="false" fxHide.lt-md="false" style="display: flex; justify-content: center; margin-top: 10px">
+  <img src="assets/images/sklogot.png" height="80px" width="80px">
+</div>
+
+<mat-toolbar fxShow="false" fxHide.lt-md="false" style="background-color: transparent; height: 75px; margin-left: 20px; display: flex; justify-content: center;" class="sticky-navbar">
+<span class="nav-text-item hover-underline-animation" routerLink="/">Home</span>
+<span class="nav-text-item hover-underline-animation" routerLink="/about">Skills</span>
+<!-- <span class="nav-text-item hover-underline-animation" routerLink="/portfolio">Portfolio</span> -->
+<span class="nav-text-item hover-underline-animation" (click)="LinkedIn()">LinkedIn</span>
+</mat-toolbar> 
+
+<mat-toolbar fxShow="true" fxHide.lt-md="true" style="background-color: transparent; height: 75px;" class="sticky-navbar">
+  <button mat-icon-button aria-label="SK Logo">
+    <img src="assets/images/sklogot.png" height="75px" width="75px" style="margin-left: 15px">
+  </button>
+<span class="example-spacer"></span>
+<span class="nav-text-item hover-underline-animation" routerLink="/">Home</span>
+<span class="nav-text-item hover-underline-animation" routerLink="/about">Skills</span>
+<!-- <span class="nav-text-item hover-underline-animation" routerLink="/portfolio">Portfolio</span> -->
+<span class="nav-text-item hover-underline-animation" (click)="LinkedIn()">LinkedIn</span>
+</mat-toolbar> 
 
 <router-outlet></router-outlet>
