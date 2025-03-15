@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, enableProdMode, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -10,5 +10,6 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    enableProdMode();
   }
 }
